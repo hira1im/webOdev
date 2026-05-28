@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  tomcat:
+    image: tomcat:10.0
+    container_name: ecommerce-tomcat
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./ECommerce_Portal/target/ecommerce-portal-1.0.0.war:/usr/local/tomcat/webapps/ecommerce-portal.war
+    environment:
+      - CATALINA_OPTS=-Xmx512m
+    restart: unless-stopped
