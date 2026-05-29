@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#efe6d9"/>
+  <rect x="70" y="90" width="660" height="420" rx="26" fill="#ffffff" stroke="#d9c4ad" stroke-width="4"/>
+  <path d="M150 360 Q260 295 380 320 Q480 350 570 335 Q630 320 670 365 Q520 440 300 440 Q205 440 150 360 Z" fill="#8a5a3b" stroke="#3f2c1f" stroke-width="6"/>
+  <circle cx="320" cy="335" r="6" fill="#f4ede3"/>
+  <circle cx="360" cy="340" r="6" fill="#f4ede3"/>
+  <circle cx="400" cy="348" r="6" fill="#f4ede3"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#3f2c1f">KUNDURAS</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#8a5a3b">CLASSIC LEATHER</text>
+</svg>

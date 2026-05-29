@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f6f2eb"/>
+  <rect x="60" y="80" width="680" height="440" rx="28" fill="#ffffff" stroke="#e7d7c6" stroke-width="4"/>
+  <path d="M140 350 Q260 300 360 320 Q470 345 560 330 Q620 320 660 365 Q520 430 300 430 Q200 430 140 350 Z" fill="#d6b892" stroke="#8a5a3b" stroke-width="6"/>
+  <circle cx="300" cy="330" r="6" fill="#6b442b"/>
+  <circle cx="340" cy="332" r="6" fill="#6b442b"/>
+  <circle cx="380" cy="338" r="6" fill="#6b442b"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#5b3a26">KUNDURAS</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#8a5a3b">SHOE PLACEHOLDER</text>
+</svg>

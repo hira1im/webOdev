@@ -4,37 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoşgeldiniz - E-Commerce Portal</title>
+    <title>KUNDURAŞ - Ayakkabı Dünyası</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
     <jsp:include page="pages/header.jsp" />
-    
+
     <div class="container">
-        <h1 style="text-align: center; margin: 40px 0; color: #6B5089;">E-Commerce Portal'a Hoşgeldiniz</h1>
-        
-        <div style="background-color: white; padding: 40px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(147, 112, 219, 0.15);">
-            <p style="font-size: 18px; margin-bottom: 20px; color: #4A3A6B;">
-                Yüksek kaliteli ürünleri inanılmaz fiyatlarla keşfet. Geniş katalogumuzda gezinerek aradığın ürünü bul.
-            </p>
-            
-            <% if (session.getAttribute("user") == null) { %>
-                <div style="margin: 30px 0;">
-                    <p style="margin-bottom: 30px; font-size: 16px; color: #6B5089; font-weight: 600;">Alışverişe başlamaya hazır mısın?</p>
-                    <a href="${pageContext.request.contextPath}/pages/login.jsp" class="btn btn-primary" style="margin-right: 15px;">Giriş Yap</a>
-                    <a href="${pageContext.request.contextPath}/pages/register.jsp" class="btn btn-success">Kayıt Ol</a>
+        <section class="hero">
+            <div>
+                <span class="hero-badge">KUNDURAŞ Koleksiyonu</span>
+                <h1 class="hero-title">Her adimda konfor, her stilde iddia.</h1>
+                <p class="hero-lede">
+                    KUNDURAŞ, gunluk, spor ve ozel gun ayakkabilarini bir araya getirir. Kaliteli
+                    malzeme, dengeli fiyatlandirma ve guvenli odeme ile yeni koleksiyonumuzu kesfedin.
+                </p>
+
+                <% if (session.getAttribute("user") == null) { %>
+                    <div class="hero-actions">
+                        <a href="${pageContext.request.contextPath}/auth?action=login" class="btn btn-primary">Giris Yap</a>
+                        <a href="${pageContext.request.contextPath}/auth?action=register" class="btn btn-success">Kayit Ol</a>
+                        <a href="${pageContext.request.contextPath}/products" class="btn btn-secondary">Urunleri Incele</a>
+                    </div>
+                <% } %>
+
+                <% if (session.getAttribute("user") != null) { %>
+                    <div class="hero-actions">
+                        <a href="${pageContext.request.contextPath}/products" class="btn btn-primary">Urunleri Incele</a>
+                        <a href="${pageContext.request.contextPath}/cart" class="btn btn-secondary">Sepete Git</a>
+                    </div>
+                <% } %>
+            </div>
+
+            <div style="display: grid; gap: 16px;">
+                <div class="hero-feature">
+                    <h4>Sehir Stili</h4>
+                    <p>Ofisten hafta sonuna, her ortam icin dengeli tasarim ve destek.</p>
                 </div>
-            <% } %>
-            
-            <% if (session.getAttribute("user") != null) { %>
-                <div style="margin: 30px 0;">
-                    <p style="margin-bottom: 30px; font-size: 16px; color: #6B5089; font-weight: 600;">Ürünlerimizi keşfetmeye başla!</p>
-                    <a href="${pageContext.request.contextPath}/products" class="btn btn-primary">Ürünleri Gör</a>
+                <div class="hero-feature">
+                    <h4>Spor Performans</h4>
+                    <p>Hafif taban, nefes alan yuzey ve esnek yapilarla daha uzun adimlar.</p>
                 </div>
-            <% } %>
-        </div>
+                <div class="hero-feature">
+                    <h4>Bakim & Aksesuar</h4>
+                    <p>Ayakkabinizi uzun omurlu tutmak icin temizleme ve bakim urunleri.</p>
+                </div>
+            </div>
+        </section>
     </div>
-    
+
     <jsp:include page="pages/footer.jsp" />
 </body>
 </html>

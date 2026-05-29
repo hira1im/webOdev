@@ -144,32 +144,35 @@ IF NOT EXISTS order_details
 );
 
 -- Insert Sample Data
--- Insert Categories
+-- Insert Categories - KUNDURAS
 INSERT INTO categories
     (category_name, description)
 VALUES
-    ('Electronics', 'Electronic devices and gadgets'),
-    ('Clothing', 'Apparel and fashion items'),
-    ('Books', 'Books and educational materials'),
-    ('Home & Garden', 'Home and garden products'),
-    ('Sports & Outdoors', 'Sports and outdoor equipment');
+    ('Erkek Ayakkabi', 'Erkeklere yonelik gunluk ve spor ayakkabilar'),
+    ('Kadin Ayakkabi', 'Kadinlara yonelik moda ayakkabilari'),
+    ('Cocuk Ayakkabi', 'Cocuklar icin rahat ve saglam ayakkabilar'),
+    ('Spor Ayakkabi', 'Tum yaslar icin performans spor ayakkabilari'),
+    ('Ayakkabi Aksesuar', 'Ayakkabi temizligi ve bakim urunleri');
 
--- Insert Admin User
-INSERT INTO users
-    (username, password, email, full_name, role)
+-- Insert Admin Users
+INSERT IGNORE
+INTO users
+(username, password, email, full_name, role)
 VALUES
-    ('admin', 'admin123', 'admin@ecommerce.com', 'Administrator', 'ADMIN');
+('admin', 'admin123', 'admin@ecommerce.com', 'Administrator', 'ADMIN'),
+('superuser', 'Super123!', 'superuser@kunduras.com', 'Super User', 'ADMIN');
 
--- Insert Sample Products
+-- Insert Sample Products - KUNDURAS
 INSERT INTO products
-    (category_id, product_name, description, price, quantity_in_stock)
+    (category_id, product_name, description, price, quantity_in_stock, image_url)
 VALUES
-    (1, 'Wireless Mouse', 'High-precision wireless mouse with USB receiver', 29.99, 50),
-    (1, 'USB-C Cable', '1.5m USB-C charging and data cable', 9.99, 100),
-    (2, 'T-Shirt', 'Comfortable cotton t-shirt', 19.99, 75),
-    (2, 'Jeans', 'Classic blue denim jeans', 49.99, 40),
-    (3, 'Java Programming Book', 'Complete guide to Java programming', 39.99, 30),
-    (4, 'Plant Pot', 'Ceramic plant pot 20cm', 14.99, 60),
-    (5, 'Running Shoes', 'Professional running shoes', 89.99, 25);
+    (1, 'Klasik Deri Ayakkabi', 'Ofis icin uygun, yuksek kaliteli deri erkek ayakkabisi', 299.99, 15, 'images/kunduras-deri.svg'),
+    (1, 'Gunluk Rahat Ayakkabi', 'Gunluk kullanim icin konforlu erkek ayakkabisi', 149.99, 25, 'images/kunduras-gunluk.svg'),
+    (2, 'Stiletto Topuklu', 'Ozel gunler icin zarif kadin ayakkabisi', 399.99, 12, 'images/kunduras-stiletto.svg'),
+    (2, 'Rahat Babet', 'Gunluk rahat kullanim icin kadin babet', 119.99, 30, 'images/kunduras-babet.svg'),
+    (3, 'Cocuk Spor Ayakkabi', 'Cocuklar icin kosu ve oyun ayakkabisi', 89.99, 40, 'images/kunduras-cocuk.svg'),
+    (4, 'Kosu Ayakkabisi', 'Profesyonel kosu performansi icin', 449.99, 20, 'images/kunduras-kosu.svg'),
+    (4, 'Gym Ayakkabisi', 'Antrenman ve fitness icin uygun ayakkabi', 199.99, 18, 'images/kunduras-gym.svg'),
+    (5, 'Ayakkabi Temizlik Firca', 'Ayakkabi bakimi icin ozel firca', 29.99, 50, 'images/kunduras-care.svg');
 
 COMMIT;

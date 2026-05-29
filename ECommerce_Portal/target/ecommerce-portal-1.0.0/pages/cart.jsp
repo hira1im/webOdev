@@ -5,11 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alışveriş Sepeti - E-Commerce Portal</title>
+    <title>Alisveris Sepeti - KUNDURAŞ</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
-    <jsp:include page="header.jsp" />
+    <jsp:include page="/pages/header.jsp" />
     
     <div class="container">
         <h2 style="color: #2C3E50;">Alışveriş Sepeti</h2>
@@ -50,7 +50,7 @@
                             <tr>
                                 <td><%= productId %></td>
                                 <td>
-                                    <form action="cart" method="post" style="display:inline;">
+                                    <form action="${pageContext.request.contextPath}/cart" method="post" style="display:inline;">
                                         <input type="hidden" name="action" value="update">
                                         <input type="hidden" name="cartId" value="<%= cartId %>">
                                         <input type="number" name="quantity" value="<%= quantity %>" min="1">
@@ -59,7 +59,7 @@
                                 </td>
                                 <td><%= sdf.format(addedAt) %></td>
                                 <td>
-                                    <form action="cart" method="post" style="display:inline;">
+                                    <form action="${pageContext.request.contextPath}/cart" method="post" style="display:inline;">
                                         <input type="hidden" name="action" value="remove">
                                         <input type="hidden" name="cartId" value="<%= cartId %>">
                                         <button type="submit" class="btn btn-danger">Kaldır</button>
@@ -71,15 +71,15 @@
                 </table>
                 
                 <div class="cart-actions">
-                    <a href="${pageContext.request.contextPath}/pages/products.jsp" class="btn btn-primary">Alışverişe Devam Et</a>
-                    <a href="cart?action=clear" class="btn btn-danger">Sepeti Temizle</a>
-                    <a href="${pageContext.request.contextPath}/pages/checkout.jsp" class="btn btn-success">Ödeme Sayfasına Git</a>
+                    <a href="${pageContext.request.contextPath}/products" class="btn btn-primary">Alisverise Devam Et</a>
+                    <a href="${pageContext.request.contextPath}/cart?action=clear" class="btn btn-danger">Sepeti Temizle</a>
+                    <a href="${pageContext.request.contextPath}/pages/checkout.jsp" class="btn btn-success">Odeme Sayfasina Git</a>
                 </div>
         <% } else { %>
-                <p style="color: #2C3E50; text-align: center;">Sepetiniz boş. <a href="${pageContext.request.contextPath}/pages/products.jsp">Alışverişe başla!</a></p>
+                <p style="color: #2C3E50; text-align: center;">Sepetiniz bos. <a href="${pageContext.request.contextPath}/products">Alisverise basla!</a></p>
         <% } %>
     </div>
     
-    <jsp:include page="footer.jsp" />
+    <jsp:include page="/pages/footer.jsp" />
 </body>
 </html>

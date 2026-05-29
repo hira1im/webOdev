@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   tomcat:
-    image: tomcat:10.0
+    image: tomcat:9.0
     container_name: ecommerce-tomcat
     ports:
       - "8080:8080"

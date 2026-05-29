@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giriş - E-Commerce Portal</title>
+    <title>Giris - KUNDURAŞ</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
     <div class="container login-container">
         <div class="login-box">
-            <h2>Giriş Yap</h2>
+            <h2>KUNDURAŞ Giris</h2>
             
             <% if (request.getAttribute("error") != null) { %>
                 <div class="alert alert-danger"><%= request.getAttribute("error") %></div>
@@ -20,7 +20,7 @@
                 <div class="alert alert-success"><%= request.getAttribute("message") %></div>
             <% } %>
             
-            <form action="auth" method="post">
+            <form action="${pageContext.request.contextPath}/auth" method="post">
                 <input type="hidden" name="action" value="login">
                 
                 <div class="form-group">
@@ -36,7 +36,7 @@
                 <button type="submit" class="btn btn-primary">Giriş Yap</button>
             </form>
             
-            <p>Hesabın yok mu? <a href="register.jsp">Buradan kayıt ol</a></p>
+            <p>Hesabin yok mu? <a href="${pageContext.request.contextPath}/auth?action=register">Kayit ol</a></p>
         </div>
     </div>
 </body>

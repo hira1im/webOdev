@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f3ece2"/>
+  <rect x="70" y="90" width="660" height="420" rx="26" fill="#ffffff" stroke="#e2d2c0" stroke-width="4"/>
+  <path d="M150 360 Q260 295 380 320 Q490 350 580 335 Q640 325 675 370 Q520 440 300 440 Q210 440 150 360 Z" fill="#1f6d5e" stroke="#0f4a42" stroke-width="6"/>
+  <circle cx="310" cy="338" r="6" fill="#f7f1e8"/>
+  <circle cx="350" cy="342" r="6" fill="#f7f1e8"/>
+  <circle cx="390" cy="348" r="6" fill="#f7f1e8"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#0f4a42">KUNDURAS</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1f6d5e">RUN SERIES</text>
+</svg>

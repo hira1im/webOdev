@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f7f1e8"/>
+  <rect x="70" y="90" width="660" height="420" rx="26" fill="#ffffff" stroke="#e3d3c1" stroke-width="4"/>
+  <path d="M150 355 Q260 305 370 325 Q470 345 560 335 Q620 325 665 370 Q520 435 305 435 Q205 435 150 355 Z" fill="#b98b5e" stroke="#6b442b" stroke-width="6"/>
+  <circle cx="310" cy="338" r="6" fill="#ffffff"/>
+  <circle cx="350" cy="342" r="6" fill="#ffffff"/>
+  <circle cx="390" cy="348" r="6" fill="#ffffff"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#5b3a26">KUNDURAS</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#8a5a3b">EVERYDAY COMFORT</text>
+</svg>

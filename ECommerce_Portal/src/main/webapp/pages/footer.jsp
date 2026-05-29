@@ -2,7 +2,7 @@
 
 <footer class="footer">
     <div class="footer-container">
-        <p>&copy; 2024 E-Commerce Portal. Tüm hakları saklıdır.</p>
+        <p>&copy; 2024 KUNDURAŞ. Tum haklari saklidir.</p>
         <ul class="footer-links">
             <li><a href="#">Hakkımızda</a></li>
             <li><a href="#">İletişim</a></li>

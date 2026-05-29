@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f6efe6"/>
+  <rect x="70" y="90" width="660" height="420" rx="26" fill="#ffffff" stroke="#e2cfc1" stroke-width="4"/>
+  <path d="M160 360 Q270 300 380 320 Q480 340 570 330 Q620 325 660 360 Q520 425 300 425 Q210 425 160 360 Z" fill="#c46b62" stroke="#8f4a45" stroke-width="6"/>
+  <circle cx="360" cy="338" r="10" fill="#f7f1e8"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#8f4a45">KUNDURAS</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c46b62">BABET</text>
+</svg>

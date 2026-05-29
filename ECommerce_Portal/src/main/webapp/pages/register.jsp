@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kayıt Ol - E-Commerce Portal</title>
+    <title>Kayit Ol - KUNDURAŞ</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
     <div class="container register-container">
         <div class="register-box">
-            <h2>Kayıt Ol</h2>
+            <h2>KUNDURAŞ Kayit</h2>
             
             <% if (request.getAttribute("error") != null) { %>
                 <div class="alert alert-danger"><%= request.getAttribute("error") %></div>
             <% } %>
             
-            <form action="auth" method="post">
+            <form action="${pageContext.request.contextPath}/auth" method="post">
                 <input type="hidden" name="action" value="register">
                 
                 <div class="form-group">
@@ -47,7 +47,7 @@
                 <button type="submit" class="btn btn-primary">Kayıt Ol</button>
             </form>
             
-            <p>Zaten hesabın var mı? <a href="login.jsp">Buradan giriş yap</a></p>
+            <p>Zaten hesabin var mi? <a href="${pageContext.request.contextPath}/auth?action=login">Giris yap</a></p>
         </div>
     </div>
 </body>

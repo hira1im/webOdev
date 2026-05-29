@@ -1,14 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siparişlerim - E-Commerce Portal</title>
+    <title>Siparislerim - KUNDURAŞ</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
-    <jsp:include page="header.jsp" />
+    <jsp:include page="/pages/header.jsp" />
     
     <div class="container">
         <h2 style="color: #2C3E50;">Siparişlerim</h2>
@@ -67,7 +69,7 @@
                                     </span>
                                 </td>
                                 <td>
-                                    <a href="orders?action=view&id=${order.orderId}" class="btn btn-info">Detayları Gör</a>
+                                    <a href="${pageContext.request.contextPath}/orders?action=view&id=${order.orderId}" class="btn btn-info">Detaylari Gor</a>
                                 </td>
                             </tr>
                         </c:forEach>
@@ -75,11 +77,11 @@
                 </table>
             </c:when>
             <c:otherwise>
-                <p style="color: #2C3E50; text-align: center;">Henüz sipariş vermemişsiniz. <a href="${pageContext.request.contextPath}/pages/products.jsp">Alışverişe başla!</a></p>
+                <p style="color: #2C3E50; text-align: center;">Henuz siparis vermediniz. <a href="${pageContext.request.contextPath}/products">Alisverise basla!</a></p>
             </c:otherwise>
         </c:choose>
     </div>
     
-    <jsp:include page="footer.jsp" />
+    <jsp:include page="/pages/footer.jsp" />
 </body>
 </html>

@@ -1,14 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sipariş Detayı - E-Commerce Portal</title>
+    <title>Siparis Detayi - KUNDURAŞ</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
-    <jsp:include page="header.jsp" />
+    <jsp:include page="/pages/header.jsp" />
     
     <div class="container">
         <h2 style="color: #2C3E50;">Sipariş Detayları</h2>
@@ -53,15 +55,15 @@
             </div>
             
             <div style="margin-top: 20px;">
-                <a href="orders" class="btn btn-primary">Siparişlere Dön</a>
+                <a href="${pageContext.request.contextPath}/orders" class="btn btn-primary">Siparislerime Don</a>
             </div>
         </c:if>
         
         <c:if test="${empty order}">
-            <p style="color: #2C3E50;">Sipariş bulunamadı. <a href="orders">Tüm siparişleri gör</a></p>
+            <p style="color: #2C3E50;">Siparis bulunamadi. <a href="${pageContext.request.contextPath}/orders">Tum siparisleri gor</a></p>
         </c:if>
     </div>
-    
-    <jsp:include page="footer.jsp" />
+
+    <jsp:include page="/pages/footer.jsp" />
 </body>
 </html>

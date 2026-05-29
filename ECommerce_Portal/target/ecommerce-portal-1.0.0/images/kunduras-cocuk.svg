@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f4efe8"/>
+  <rect x="70" y="90" width="660" height="420" rx="26" fill="#ffffff" stroke="#decdbb" stroke-width="4"/>
+  <path d="M170 360 Q280 300 390 320 Q490 345 575 335 Q630 328 660 370 Q520 435 310 435 Q215 435 170 360 Z" fill="#5aa3b5" stroke="#2c6b7a" stroke-width="6"/>
+  <circle cx="320" cy="338" r="6" fill="#ffffff"/>
+  <circle cx="360" cy="342" r="6" fill="#ffffff"/>
+  <circle cx="400" cy="348" r="6" fill="#ffffff"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#2c6b7a">KUNDURAS</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5aa3b5">KIDS SPORT</text>
+</svg>

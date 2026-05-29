@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f6efe5"/>
+  <rect x="70" y="90" width="660" height="420" rx="26" fill="#ffffff" stroke="#e1d1bf" stroke-width="4"/>
+  <rect x="260" y="250" width="280" height="160" rx="18" fill="#d6b892" stroke="#8a5a3b" stroke-width="6"/>
+  <rect x="300" y="220" width="200" height="40" rx="12" fill="#8a5a3b"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#5b3a26">KUNDURAS</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#8a5a3b">CARE ACCESSORY</text>
+</svg>

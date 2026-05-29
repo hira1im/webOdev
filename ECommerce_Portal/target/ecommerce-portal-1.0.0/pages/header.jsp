@@ -7,7 +7,7 @@
 <header class="header">
     <div class="header-container">
         <div class="logo">
-            <h1><a href="${pageContext.request.contextPath}/">E-Ticaret Portalı</a></h1>
+            <h1><a href="${pageContext.request.contextPath}/">KUNDURAŞ</a></h1>
         </div>
         
         <nav class="navbar">
@@ -27,8 +27,8 @@
                 <% } %>
                 
                 <% if (user == null) { %>
-                    <li style="margin-left: auto;"><a href="${pageContext.request.contextPath}/pages/login.jsp" class="btn btn-primary" style="padding: 8px 16px;">Giriş Yap</a></li>
-                    <li><a href="${pageContext.request.contextPath}/pages/register.jsp" class="btn btn-success" style="padding: 8px 16px;">Kayıt Ol</a></li>
+                    <li style="margin-left: auto;"><a href="${pageContext.request.contextPath}/auth?action=login" class="btn btn-primary" style="padding: 8px 16px;">Giris Yap</a></li>
+                    <li><a href="${pageContext.request.contextPath}/auth?action=register" class="btn btn-success" style="padding: 8px 16px;">Kayit Ol</a></li>
                 <% } %>
             </ul>
         </nav>

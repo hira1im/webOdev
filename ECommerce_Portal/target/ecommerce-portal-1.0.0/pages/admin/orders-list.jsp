@@ -90,24 +90,3 @@
     <jsp:include page="/pages/footer.jsp" />
 </body>
 </html>
-                            <td>
-                                <a href="${pageContext.request.contextPath}/orders?action=view&id=${order.orderId}" class="btn btn-sm btn-info">View</a>
-                            </td>
-                        </tr>
-                    </c:forEach>
-                </tbody>
-            </table>
-        </c:if>
-        
-        <c:if test="${empty orders}">
-            <p>No orders found.</p>
-        </c:if>
-        
-        <div class="admin-nav">
-            <a href="${pageContext.request.contextPath}/admin?action=dashboard" class="btn btn-primary">Back to Dashboard</a>
-        </div>
-    </div>
-    
-    <jsp:include page="/pages/footer.jsp" />
-</body>
-</html>

@@ -57,7 +57,7 @@
     </style>
 </head>
 <body>
-    <jsp:include page="header.jsp" />
+    <jsp:include page="/pages/header.jsp" />
     
     <div class="error-container">
         <div class="error-content">
@@ -68,18 +68,11 @@
             </p>
             <div class="btn-group">
                 <a href="${pageContext.request.contextPath}/" class="btn btn-primary">Ana Sayfaya Git</a>
-                <a href="${pageContext.request.contextPath}/pages/products.jsp" class="btn btn-primary">Ürünleri Gör</a>
+                <a href="${pageContext.request.contextPath}/products" class="btn btn-primary">Urunleri Gor</a>
             </div>
         </div>
     </div>
     
-    <jsp:include page="footer.jsp" />
-</body>
-</html>
-            </div>
-        </div>
-    </div>
-    
-    <jsp:include page="footer.jsp" />
+    <jsp:include page="/pages/footer.jsp" />
 </body>
 </html>

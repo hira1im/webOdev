@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f4ece3"/>
+  <rect x="70" y="90" width="660" height="420" rx="26" fill="#ffffff" stroke="#e2cfc1" stroke-width="4"/>
+  <path d="M200 360 Q300 290 410 320 Q520 350 610 340 Q645 335 675 355 Q520 430 330 430 Q235 430 200 360 Z" fill="#7a3d5a" stroke="#4b2538" stroke-width="6"/>
+  <rect x="565" y="360" width="14" height="80" fill="#4b2538"/>
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#4b2538">KUNDURAS</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#7a3d5a">STILETTO</text>
+</svg>

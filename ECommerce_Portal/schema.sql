@@ -154,11 +154,13 @@ DELETE RESTRICT,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Sample Data
--- Admin User
-INSERT INTO users
-    (username, password, email, full_name, role)
+-- Admin Users
+INSERT IGNORE
+INTO users
+(username, password, email, full_name, role)
 VALUES
-    ('admin', 'admin123', 'admin@ecommerce.com', 'Administrator', 'ADMIN');
+('admin', 'admin123', 'admin@ecommerce.com', 'Administrator', 'ADMIN'),
+('superuser', 'Super123!', 'superuser@kunduras.com', 'Super User', 'ADMIN');
 
 -- Sample Categories - KUNDURAŞ (Ayakkabı Satışı)
 INSERT INTO categories
@@ -172,13 +174,13 @@ VALUES
 
 -- Sample Products - KUNDURAŞ
 INSERT INTO products
-    (category_id, product_name, description, price, quantity_in_stock)
+    (category_id, product_name, description, price, quantity_in_stock, image_url)
 VALUES
-    (1, 'Klasik Deri Ayakkabı', 'Ofis için uygun, yüksek kaliteli deri erkek ayakkabısı', 299.99, 15),
-    (1, 'Günlük Rahat Ayakkabı', 'Günlük kullanım için konforlu erkek ayakkabısı', 149.99, 25),
-    (2, 'Stiletto Topuklu', 'Özel günler için zarif kadın ayakkabısı', 399.99, 12),
-    (2, 'Rahat Babet', 'Günlük rahat kullanım için kadın babet', 119.99, 30),
-    (3, 'Çocuk Spor Ayakkabı', 'Çocuklar için koşu ve oyun ayakkabısı', 89.99, 40),
-    (4, 'Koşu Ayakkabısı', 'Profesyonel koşu performansı için', 449.99, 20),
-    (4, 'Gym Ayakkabısı', 'Antrenman ve fitness için uygun ayakkabı', 199.99, 18),
-    (5, 'Ayakkabı Temizlik Fırçası', 'Ayakkabı bakımı için özel fırça', 29.99, 50);
+    (1, 'Klasik Deri Ayakkabı', 'Ofis için uygun, yüksek kaliteli deri erkek ayakkabısı', 299.99, 15, 'images/kunduras-deri.svg'),
+    (1, 'Günlük Rahat Ayakkabı', 'Günlük kullanım için konforlu erkek ayakkabısı', 149.99, 25, 'images/kunduras-gunluk.svg'),
+    (2, 'Stiletto Topuklu', 'Özel günler için zarif kadın ayakkabısı', 399.99, 12, 'images/kunduras-stiletto.svg'),
+    (2, 'Rahat Babet', 'Günlük rahat kullanım için kadın babet', 119.99, 30, 'images/kunduras-babet.svg'),
+    (3, 'Çocuk Spor Ayakkabı', 'Çocuklar için koşu ve oyun ayakkabısı', 89.99, 40, 'images/kunduras-cocuk.svg'),
+    (4, 'Koşu Ayakkabısı', 'Profesyonel koşu performansı için', 449.99, 20, 'images/kunduras-kosu.svg'),
+    (4, 'Gym Ayakkabısı', 'Antrenman ve fitness için uygun ayakkabı', 199.99, 18, 'images/kunduras-gym.svg'),
+    (5, 'Ayakkabı Temizlik Fırçası', 'Ayakkabı bakımı için özel fırça', 29.99, 50, 'images/kunduras-care.svg');
